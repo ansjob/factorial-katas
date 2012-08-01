@@ -1,0 +1,10 @@
+{
+	"name": "bigintfactorial",
+	"version" : "0.0.1",
+	"description": "a package for calculating factorial numbers using a bigint library",
+	"author": "Andreas Sjöberg <ansjob@kth.se>",
+	"depedencies": {
+		"nodeunit" : ">= 0.7.4" 
+	},
+	"engine": "node 0.6.16"
+}
