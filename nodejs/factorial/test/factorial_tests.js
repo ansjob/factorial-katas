@@ -23,13 +23,13 @@ exports['read'] = nodeunit.testCase({
 	'a string' : function(test) {
 		test.expect(1);
 
-		process.exit = test.done;
 		console.log = function(str) {
 			test.equal(str, "Error: Can only calculate positive integers");
 		};
 
 		factorial.read();
 		this.ev.emit('data', 'string');
+		test.done();
 	},
 
 	'a number' : function(test) {
@@ -41,6 +41,7 @@ exports['read'] = nodeunit.testCase({
 
 		factorial.read();
 		this.ev.emit('data', '3');
+		test.done();
 	}
 });
 

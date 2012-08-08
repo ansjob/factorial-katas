@@ -30,10 +30,8 @@ exports.read = function() {
 		try {
 			n = parseFloat(n);
 			console.log(exports.calculate(n));
-			process.exit();
 		} catch (e) {
 			console.log(e);
-			process.exit();
 		}
 	});
 }
